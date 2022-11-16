@@ -1,7 +1,7 @@
 # Quiz_game
 
 <p align="center">
-      <img src="Project Logo Url" width="726">
+      <img src="https://i.ibb.co/F5XnQ6s/Quiz-game.png" width="100%">
 </p>
 
 <p align="center">
