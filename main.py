@@ -2,9 +2,9 @@
 import random
 
 # create words bank
-words_bank = ['автострада', 'бензин', 'инопланетянин',
-              'самолет', 'библиотека', 'шайба',
-              'олимпиада']
+words_bank = ['motorway', 'petrol', 'alien',
+              'plane', 'library', 'shim',
+              'exams']
 
 # create new variables
 secret_word = random.choice(words_bank)
@@ -17,7 +17,7 @@ errors_cnt = 0
 
 # create 'while' cycle
 while True:
-    letter = input('введите ОДНУ русскую букву: ').lower()
+    letter = input('Print one English letter: ').lower()
     if len(letter) != 1:
         continue
 
@@ -27,14 +27,16 @@ while True:
                 gamer_word[idx] = letter
 
         if '*' not in gamer_word:
-            print('вы выиграли')
+            print('You win :)')
+            print('gassing word:', secret_word)
             break
     else:
         errors_cnt += 1
-        print('ошибок допущено:', errors_cnt)
+        print('Mistakes made:', errors_cnt)
 
         if errors_cnt == 8:
-            print('вы проиграли')
+            print('You lose :(')
+            print('gassing word:', secret_word)
             break
 
     # output gamer word
